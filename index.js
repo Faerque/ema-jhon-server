@@ -12,7 +12,7 @@ app.use(cors());
 
 const port = 5000;
 
-const uri = `mongodb+srv://emJhon:emaJhon39@cluster0.cpqmt.mongodb.net/emJhonServer?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.cpqmt.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 // console.log(process.env.DB_USER);
 
